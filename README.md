@@ -1,6 +1,6 @@
 # DevOps Technology
 
 ## Web server
-- NGINX
+- [NGINX](NGINX.md)
 - Apache HTTP server
 - Apache Tomcat
