@@ -44,7 +44,6 @@ openssl req -new -key server.pem -out server.csr
 ```
 
 ## 1-2단계 한번에 하는 방법
-### HTTPS 인증을 위한 CSR 얻는 방법
 ```bash
 sudo mkdir -p /etc/nginx/ssl/private /etc/nginx/ssl/certs
 sudo openssl req -newkey rsa -nodes -keyout /etc/nginx/ssl/private/server.key -out /etc/nginx/ssl/certs/server.csr
