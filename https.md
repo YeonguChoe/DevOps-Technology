@@ -40,6 +40,8 @@ sudo openssl req -newkey rsa -nodes -keyout /etc/nginx/ssl/private/server.key -o
 ```
 
 ### Key 파일의 암호화를 풀는 방법
+- crt파일은 개인키와 같이 사용되어야 한다.
+- crt파일과 개인키를 같이 사용하려면, 개인키가 복호화 되어 있어야 한다.
 #### 암호화된 key파일 복호화
 ```bash
 openssl rsa -in server.key -out server.key
