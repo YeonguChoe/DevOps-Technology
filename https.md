@@ -32,12 +32,27 @@ openssl genpkey -algorithm RSA -out server.pem -nodes
 |csr파일|/etc/nginx/ssl/certs/|
 |crt파일|/etc/nginx/ssl/certs/|
 
+## 2단계: CSR(Certificate signing request) 파일 생성하기
+### key파일을 이용해서 CSR파일 생성 방법
+```bash
+openssl req -new -key server.key -out server.csr
+```
 
+### pem파일을 이용해서 CSR파일 생성 방법
+```bash
+openssl req -new -key server.pem -out server.csr
+```
+
+## 1-2단계 한번에 하는 방법
 ### HTTPS 인증을 위한 CSR 얻는 방법
 ```bash
-sudo mkdir -p /etc/nginx/ssl/certs /etc/nginx/ssl/private
+sudo mkdir -p /etc/nginx/ssl/private /etc/nginx/ssl/certs
 sudo openssl req -newkey rsa -nodes -keyout /etc/nginx/ssl/private/server.key -out /etc/nginx/ssl/certs/server.csr
 ```
+
+## 3단계: 인증서 발급
+
+## 4단계: 웹서버 설정하기
 
 ### Key 파일의 암호화를 풀는 방법
 - crt파일은 개인키와 같이 사용되어야 한다.
@@ -50,15 +65,4 @@ openssl rsa -in server.key -out server.key
 #### 암호화된 pem파일 복호화
 ```bash
 openssl rsa -in server.pem -out server.pem
-```
-
-## CSR(Certificate signing request) 파일 생성 방법
-### key파일을 이용해서 CSR파일 생성 방법
-```bash
-openssl req -new -key server.key -out server.csr
-```
-
-### pem파일을 이용해서 CSR파일 생성 방법
-```bash
-openssl req -new -key server.pem -out server.csr
 ```
