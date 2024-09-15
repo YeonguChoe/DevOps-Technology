@@ -51,3 +51,12 @@ openssl rsa -in server.pem -out server.pem
 ```
 
 ## CSR(Certificate signing request) 파일 생성 방법
+### key파일을 이용해서 CSR파일 생성 방법
+```bash
+openssl req -new -key server.key -out server.csr
+```
+
+### pem파일을 이용해서 CSR파일 생성 방법
+```bash
+openssl req -new -key server.pem -out server.csr
+```
