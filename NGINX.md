@@ -16,3 +16,5 @@ sudo nginx -t
 ```bash
 sudo systemctl restart nginx
 ```
+
+## NGINX 설정 파일
