@@ -4,5 +4,5 @@
 - [NGINX](NGINX.md)
 - Apache HTTP server
 
-## TLS
+## 웹 보안
 - [HTTPS 인증](HTTPS.md)
