@@ -26,11 +26,11 @@ openssl genpkey -algorithm RSA -out server.pem -nodes
 
 # NGINX에서 저장위치
 
-|파일 이름|위치|
-|---|---|
-|개인키|/etc/nginx/ssl/private/|
-|csr파일|/etc/nginx/ssl/certs/|
-|crt파일|/etc/nginx/ssl/certs/|
+| 파일 이름 | 위치                    |
+| --------- | ----------------------- |
+| 개인키    | /etc/nginx/ssl/private/ |
+| csr파일   | /etc/nginx/ssl/certs/   |
+| crt파일   | /etc/nginx/ssl/certs/   |
 
 ## 2단계: CSR(Certificate signing request) 파일 생성하기
 ### key파일을 이용해서 CSR파일 생성 방법
