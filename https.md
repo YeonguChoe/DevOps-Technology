@@ -50,7 +50,7 @@ sudo mkdir -p /etc/nginx/ssl/private /etc/nginx/ssl/certs
 sudo openssl req -newkey rsa -nodes -keyout /etc/nginx/ssl/private/server.key -out /etc/nginx/ssl/certs/server.csr
 ```
 
-## 3단계: 인증서 발급
+## 3단계: 인증서(CRT파일) 발급
 
 ## 4단계: 웹서버 설정하기
 
