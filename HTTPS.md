@@ -68,7 +68,7 @@ openssl rsa -in server.pem -out server.pem
 
 ## 도메인 설정 방법
 
-|종류|호스트|값|하는일|
-|---|---|---|---|
-|A record|@|서버 IP 주소|domain 이름을 서버의 IP 주소에 연결한다.|
-|CNAME record|www|domain 주소|domain 주소를 다른 domain 주소로 연결한다.|
+| 종류         | 호스트 | 값           | 하는일                                     |
+| ------------ | ------ | ------------ | ------------------------------------------ |
+| A record     | @      | 서버 IP 주소 | domain 이름을 서버의 IP 주소에 연결한다.   |
+| CNAME record | www    | domain 주소  | domain 주소를 다른 domain 주소로 연결한다. |
