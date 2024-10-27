@@ -17,3 +17,10 @@
 - Repository for Image.
 - Similar to `GitHub`, but it is for Docker Image.
 
+## Command
+- List downloaded images
+
+```bash
+docker images
+```
+
