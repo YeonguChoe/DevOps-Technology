@@ -10,3 +10,8 @@
 ## Container
 - Container is an instance from Image.
 - Similary to `object` in OOP.
+
+## Docker Hub
+- Repository for Image.
+- Similar to `GitHub`, but it is for Docker Image.
+
