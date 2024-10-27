@@ -35,3 +35,9 @@ docker pull <image-name>[:<tag>]
 ```bash
 docker rmi <image-name>[:<tag>]
 ```
+
+- Instantiate docker image
+
+```bash
+docker run [OPTIONS] <image-name>[:<tag>]
+```
