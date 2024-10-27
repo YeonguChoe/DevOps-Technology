@@ -24,3 +24,8 @@
 docker images
 ```
 
+- Download docker image
+
+```bash
+docker pull <image-name>[:<tag>]
+```
