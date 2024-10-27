@@ -39,5 +39,11 @@ docker rmi <image-name>[:<tag>]
 - Instantiate docker image
 
 ```bash
-docker run [OPTIONS] <image-name>[:<tag>]
+docker run <image-name>[:<tag>]
 ```
+
+```bash
+// Instantiate on the background
+docker run -d <image-name>[:<tag>]
+```
+
