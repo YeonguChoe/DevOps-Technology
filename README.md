@@ -4,7 +4,7 @@
 - [Docker](Docker.md)
 
 ## Continuous Integration + Continuous Delivery
-- [Jenkins](Jenkins.md)
+- Jenkins
 
 ## Web server
 - [NGINX](NGINX.md)
