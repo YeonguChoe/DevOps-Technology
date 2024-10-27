@@ -29,3 +29,9 @@ docker images
 ```bash
 docker pull <image-name>[:<tag>]
 ```
+
+- Remove docker image
+
+```bash
+docker rmi <image-name>[:<tag>]
+```
