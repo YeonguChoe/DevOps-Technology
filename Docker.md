@@ -48,3 +48,14 @@ docker run <image-name>[:<tag>]
 docker run -d <image-name>[:<tag>]
 ```
 
+- List running docker container(s)
+
+```bash
+docker ps
+```
+
+- Stop docker container
+
+```bash
+docker stop <CONTAINER ID>
+```
