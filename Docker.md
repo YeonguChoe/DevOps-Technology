@@ -70,3 +70,8 @@ To link a port from a Docker container to a port on your local computer, user ne
 docker run -p <Local Computer Port>:<Container Port>
 ```
 
+## Building Docker Image
+
+```bash
+docker build -tag <Image Name>:<tag> <Destination>
+```
