@@ -100,3 +100,9 @@ CMD ["node","server.js"]
 ```bash
 docker build -tag <Image name:tag> <Dockerfile location>
 ```
+
+- Example
+
+```bash
+docker build -t app:1.0 ./
+```
