@@ -52,22 +52,13 @@ docker run <image-name>[:<tag>]
 - Instantiate docker image on the background
 
 ```bash
-docker run -d <image-name>[:<tag>]
+docker run --detach <image-name>[:<tag>]
 ```
 
 - Stop docker container
 
 ```bash
 docker stop <CONTAINER ID>
-```
-
-## Port Binding
-- Application runs on isolated container with its own network, having different port than local network.
-- To link port between container port and local computer port, user need to bind the port.
-To link a port from a Docker container to a port on your local computer, user need to bind the ports when you run the container.
-
-```bash
-docker run -p <Local Computer Port>:<Container Port>
 ```
 
 ## Building Docker Image
@@ -101,8 +92,24 @@ CMD ["node","server.js"]
 docker build -tag <Image name:tag> <Dockerfile location>
 ```
 
-- Example
+  - Example
+  
+  ```bash
+  docker build -t app:1.0 ./
+  ```
+
+
+## Port Binding
+- Application runs on isolated container with its own network, having different port than local network.
+- To link port between container port and local computer port, user need to bind the port.
+To link a port from a Docker container to a port on your local computer, user need to bind the ports when you run the container.
 
 ```bash
-docker build -t app:1.0 ./
+docker run -p <Local Computer Port>:<Container Port>
 ```
+
+  - Example
+  
+  ```bash
+  docker run --detach --publish 3000:3000 app:1.0
+  ```
