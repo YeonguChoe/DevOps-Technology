@@ -30,10 +30,11 @@ docker images
 docker pull <image-name>[:<tag>]
 ```
 
-- Remove docker image
+- Remove docker resource
 
 ```bash
-docker rmi <image-name>[:<tag>]
+docker rm <container_id>
+docker rmi <image_id>
 ```
 
 - Instantiate docker image
