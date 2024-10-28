@@ -24,6 +24,12 @@
 docker images
 ```
 
+- List running docker container(s)
+
+```bash
+docker ps
+```
+
 - Download docker image
 
 ```bash
@@ -47,12 +53,6 @@ docker run <image-name>[:<tag>]
 
 ```bash
 docker run -d <image-name>[:<tag>]
-```
-
-- List running docker container(s)
-
-```bash
-docker ps
 ```
 
 - Stop docker container
