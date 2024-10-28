@@ -27,7 +27,7 @@ docker images
 - List running docker container(s)
 
 ```bash
-docker ps
+docker ps -a
 ```
 
 - Download docker image
