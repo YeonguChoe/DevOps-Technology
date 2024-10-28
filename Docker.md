@@ -39,6 +39,7 @@ docker pull <image-name>[:<tag>]
 - Remove docker resource
 
 ```bash
+docker stop <container_id>
 docker rm <container_id>
 docker rmi <image_id>
 ```
