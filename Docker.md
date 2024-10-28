@@ -39,9 +39,9 @@ docker pull <image-name>[:<tag>]
 - Remove docker resource
 
 ```bash
-docker stop <container_id>
-docker rm <container_id> # container should be removed in advance
-docker rmi <image_id>
+docker stop <container_id> # 1. Docker container should be stopped.
+docker rm <container_id> # 2. Docker container should be removed in advance.
+docker rmi <image_id> # 3. Actually removing image.
 ```
 
 - Instantiate docker image
