@@ -72,6 +72,29 @@ docker run -p <Local Computer Port>:<Container Port>
 
 ## Building Docker Image
 
+- Dockerfile
+
+```Dockerfile
+# FROM sets the base image of newly creating image
+# Includes operating system at the tag (E.g, Alpine Linux)
+FROM node:20-alpine
+
+
+# COPY copies file or directory to image
+# Syntax: COPY <file/directory name> <location in image>
+COPY package.json /App/
+COPY src /App/
+
+# WORKDIR moves current location in CLI (Same as cd)
+WORKDIR /App
+
+# RUN execute any CLI command
+RUN npm i
+
+# CMD sets command to execute when the image is instantiated to container
+CMD ["node","server.js"]
+```
+
 ```bash
-docker build -tag <Image Name>:<tag> <Destination>
+docker build -tag <Image name:tag> <Dockerfile location>
 ```
