@@ -60,3 +60,13 @@ docker run -d <image-name>[:<tag>]
 ```bash
 docker stop <CONTAINER ID>
 ```
+
+## Port Binding
+- Application runs on isolated container with its own network, having different port than local network.
+- To link port between container port and local computer port, user need to bind the port.
+To link a port from a Docker container to a port on your local computer, user need to bind the ports when you run the container.
+
+```bash
+docker run -p <Local Computer Port>:<Container Port>
+```
+
