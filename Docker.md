@@ -72,7 +72,7 @@ docker run -p <Local Computer Port>:<Container Port>
 
 ## Building Docker Image
 
-- Dockerfile
+1) Dockerfile
 
 ```Dockerfile
 # FROM sets the base image of newly creating image
@@ -94,6 +94,8 @@ RUN npm i
 # CMD sets command to execute when the image is instantiated to container
 CMD ["node","server.js"]
 ```
+
+2) Build Docker image
 
 ```bash
 docker build -tag <Image name:tag> <Dockerfile location>
