@@ -40,7 +40,7 @@ docker pull <image-name>[:<tag>]
 
 ```bash
 docker stop <container_id>
-docker rm <container_id>
+docker rm <container_id> # container should be removed in advance
 docker rmi <image_id>
 ```
 
